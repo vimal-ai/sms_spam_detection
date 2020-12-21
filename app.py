@@ -12,8 +12,8 @@ from nltk.stem.porter import PorterStemmer
 
 
 app = Flask(__name__)
-model = pickle.load(open('/home/vimal/DataScience_projects/sms spam detection/models/model.sav', 'rb'))
-pre = pickle.load(open('/home/vimal/DataScience_projects/sms spam detection/models/sc.sav', 'rb'))
+model = pickle.load(open('./models/model.sav', 'rb'))
+pre = pickle.load(open('./models/sc.sav', 'rb'))
 
 def preprocess(input):
     ps = PorterStemmer()
